@@ -106,9 +106,13 @@ Perintah & Output Daftar Branch:
 Bash
 git branch -a
 Plaintext
-  bug-fix-revert
+* main
   bug-fix-typo
-- main
+  bug-fix-revert
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+  remotes/origin/bug-fix-typo
+  remotes/origin/bug-fix-revert
   remotes/origin/Bash-git-checkout-main
   remotes/origin/HEAD -> origin/main
   remotes/origin/git-merge-bug-fix-typo
