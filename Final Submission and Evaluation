@@ -1,0 +1,115 @@
+Question 1
+URL File README.md:
+
+Plaintext
+https://github.com/ririnnk/github-final-project/blob/main/README.md
+Question 2
+URL File LICENSE:
+
+Plaintext
+https://github.com/ririnnk/github-final-project/blob/main/LICENSE
+Question 3
+URL File CODE_OF_CONDUCT:
+
+Plaintext
+https://github.com/ririnnk/github-final-project/blob/main/CODE_OF_CONDUCT.md
+Question 4
+URL File CONTRIBUTING.md:
+
+Plaintext
+https://github.com/ririnnk/github-final-project/blob/main/CONTRIBUTING.md
+Question 5
+URL File simple-interest.sh:
+
+Plaintext
+https://github.com/ririnnk/github-final-project/blob/main/simple-interest.sh
+Question 6
+Perintah & Output Verifikasi Fork:
+
+Bash
+curl -s https://api.github.com/repos/ririnnk/mcino-Introduction-to-Git-and-GitHub
+JSON
+{
+  "id": 1437360320,
+  "name": "mcino-Introduction-to-Git-and-GitHub",
+  "full_name": "ririnnk/mcino-Introduction-to-Git-and-GitHub",
+  "fork": true,
+  "default_branch": "main",
+  "parent": {
+    "id": 1050225087,
+    "name": "mcino-Introduction-to-Git-and-GitHub",
+    "full_name": "ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub",
+    "owner": {
+      "login": "ibm-developer-skills-network"
+    }
+  },
+  "source": {
+    "id": 1050225087,
+    "name": "mcino-Introduction-to-Git-and-GitHub",
+    "full_name": "ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub",
+    "owner": {
+      "login": "ibm-developer-skills-network"
+    }
+  }
+}
+Question 7 (Diperbarui sesuai Feedback)
+Perintah & Output Merge Branches:
+
+Bash
+git checkout main
+git merge bug-fix-typo
+Plaintext
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+Updating 1b491a2..2bf4040
+Fast-forward
+ README.md | 2 +
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Question 8
+Perintah & Output Pull Request / API Endpoint IBM:
+
+Bash
+curl -s https://api.github.com/repos/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub/pulls
+JSON
+[
+  {
+    "url": "https://api.github.com/repos/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub/pulls/47",
+    "id": 2684152390,
+    "node_id": "PR_kwDOPpkpvs6A",
+    "number": 47,
+    "state": "open",
+    "title": "Update README.md",
+    "user": {
+      "login": "ririnnk",
+      "id": 103654291,
+      "html_url": "https://github.com/ririnnk"
+    },
+    "head": {
+      "label": "ririnnk:bug-fix-typo",
+      "ref": "bug-fix-typo",
+      "repo": {
+        "id": 1437360320,
+        "name": "mcino-Introduction-to-Git-and-GitHub",
+        "full_name": "ririnnk/mcino-Introduction-to-Git-and-GitHub",
+        "fork": true
+      }
+    },
+    "base": {
+      "label": "ibm-developer-skills-network:main",
+      "ref": "main"
+    }
+  }
+]
+Question 9
+Perintah & Output Daftar Branch:
+
+Bash
+git branch -a
+Plaintext
+  bug-fix-revert
+  bug-fix-typo
+- main
+  remotes/origin/Bash-git-checkout-main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/git-merge-bug-fix-typo
+  remotes/origin/main
